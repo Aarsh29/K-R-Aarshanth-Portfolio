@@ -1,0 +1,6 @@
+{
+  "name": "Cybersecurity Portfolio",
+  "description": "Interactive cybersecurity portfolio featuring threat research logs, focus areas, skills matrix, operations, and secure contact channels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
