@@ -1,25 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+﻿# K R Aarshanth Portfolio
 
-# Run and deploy your AI Studio app
+A modern cybersecurity portfolio built with React and Vite.
 
-This contains everything you need to run your app locally.
+## Overview
+This project showcases an interactive portfolio experience with animated UI elements, system simulation panels, and a cyberpunk aesthetic.
 
-View your app in AI Studio: https://ai.studio/apps/b5f8cc4a-0ba9-44f9-9a19-c6335ff1ad78
+> This portfolio was developed with help from Google AI Studio.
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
+## Local setup
 1. Install dependencies:
    `npm install`
-2. Copy `.env.example` to `.env.local` and set your Gemini API key:
-   `cp .env.example .env.local`
-3. Run the app:
+2. Copy `.env.example` to `.env.local` and add your Gemini API key:
+   `copy .env.example .env.local`
+3. Start the app:
    `npm run dev`
 
-> You can also start the app with `npm start`.
+## Scripts
+- `npm run dev` — launch the app locally
+- `npm start` — alias for `npm run dev`
+- `npm run build` — build production files
+- `npm run preview` — preview the production build
+- `npm run type-check` — run TypeScript checks
 
-If port `3000` is already in use, Vite will automatically choose the next available port.
+## Environment variables
+- `GEMINI_API_KEY` — required for Gemini AI integration
+- `APP_URL` — optional host URL for deployment-specific configuration
+
+## Notes
+- Keep real secrets out of version control.
+- Use `.env.local` for local credentials.
