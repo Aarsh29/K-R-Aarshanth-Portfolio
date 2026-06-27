@@ -1,21 +1,23 @@
 import React, { useState } from "react";
+import aarshImage from "../../assets/aarshanth.png";
 
 export default function SecureAvatar() {
-  const [imgSrc, setImgSrc] = useState<string | null>("/aarshanth.jpg");
+  const candidates: (string | null)[] = [
+    aarshImage,
+    "/assets/aarshanth.jpg",
+    "/assets/aarshanth.png",
+    "/assets/aarshanth.jpeg",
+  ];
+
+  const [candidateIndex, setCandidateIndex] = useState<number>(0);
   const [hasImage, setHasImage] = useState<boolean>(true);
 
-  // Try multiple fallback extensions and folders in order
+  const imgSrc = candidates[candidateIndex] ?? null;
+
+  // Cycle through candidate URLs on error, then fall back to SVG
   const handleImageError = () => {
-    if (imgSrc === "/aarshanth.jpg") {
-      setImgSrc("/aarshanth.png");
-    } else if (imgSrc === "/aarshanth.png") {
-      setImgSrc("/aarshanth.jpeg");
-    } else if (imgSrc === "/aarshanth.jpeg") {
-      setImgSrc("/src/aarshanth.jpg");
-    } else if (imgSrc === "/src/aarshanth.jpg") {
-      setImgSrc("/src/aarshanth.png");
-    } else if (imgSrc === "/src/aarshanth.png") {
-      setImgSrc("/src/aarshanth.jpeg");
+    if (candidateIndex < candidates.length - 1) {
+      setCandidateIndex((i) => i + 1);
     } else {
       setHasImage(false);
     }

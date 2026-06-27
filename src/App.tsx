@@ -623,44 +623,50 @@ export default function App() {
                     <p className="text-xs md:text-sm leading-relaxed text-[#00FF41]/85">
                       Like every learner, my path has been filled with unfinished ideas, failed experiments, broken code, deployment issues, endless debugging sessions, and moments of uncertainty. There were times where progress felt invisible. But growth often hides in struggle. Every failed build taught me resilience. Every bug taught me patience. Every mistake taught me how to think better. What started with simple frontend projects slowly expanded into backend systems, security workflows, AI-integrated applications, and full-stack architectures. Over time, I stopped just building things — <span className="text-white glow-text font-bold">I started understanding them.</span>
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2">
-                      <div className="p-3 bg-red-950/5 border border-red-500/20 rounded-[2px] shadow-[0_0_8px_rgba(239,68,68,0.05)]">
-                        <div className="font-mono text-[9px] text-red-500 tracking-wider mb-1">■ RED TEAMING & CYBER</div>
-                        <p className="text-[10.5px] text-red-200/75 leading-snug">Emulating adversarial behavior, attack surface mappings, and vulnerability discovery.</p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 items-stretch">
+                      <div className="p-4 h-full flex flex-col justify-between bg-red-950/5 border border-red-500/20 rounded-[2px] shadow-[0_0_8px_rgba(239,68,68,0.05)]">
+                        <div>
+                          <div className="font-mono text-[9px] text-red-500 tracking-wider mb-1">■ RED TEAMING & CYBER</div>
+                          <p className="text-[10.5px] text-red-200/75 leading-snug">Emulating adversarial behavior, attack surface mappings, and vulnerability discovery.</p>
+                        </div>
                       </div>
-                      <div className="p-3 bg-[#050505]/60 border border-[#00FF41]/15 rounded-[2px]">
-                        <div className="font-mono text-[9px] text-[#00E5FF] tracking-wider mb-1">■ ARTIFICIAL INTELLIGENCE</div>
-                        <p className="text-[10.5px] text-[#00FF41]/75 leading-snug">Exploring intelligent systems to improve security workflows.</p>
+                      <div className="p-4 h-full flex flex-col justify-between bg-[#050505]/60 border border-[#00FF41]/15 rounded-[2px]">
+                        <div>
+                          <div className="font-mono text-[9px] text-[#00E5FF] tracking-wider mb-1">■ ARTIFICIAL INTELLIGENCE</div>
+                          <p className="text-[10.5px] text-[#00FF41]/75 leading-snug">Exploring intelligent systems to improve security workflows.</p>
+                        </div>
                       </div>
-                      <div className="p-3 bg-[#050505]/60 border border-[#00FF41]/15 rounded-[2px]">
-                        <div className="font-mono text-[9px] text-[#00E5FF] tracking-wider mb-1">■ FULL STACK DEVELOPMENT</div>
-                        <p className="text-[10.5px] text-[#00FF41]/75 leading-snug">Building complete, secure systems from frontend to backend.</p>
+                      <div className="p-4 h-full flex flex-col justify-between bg-[#050505]/60 border border-[#00FF41]/15 rounded-[2px]">
+                        <div>
+                          <div className="font-mono text-[9px] text-[#00E5FF] tracking-wider mb-1">■ FULL STACK DEVELOPMENT</div>
+                          <p className="text-[10.5px] text-[#00FF41]/75 leading-snug">Building complete, secure systems from frontend to backend.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-3 p-4 bg-[#050505]/30 border border-[#00FF41]/10 rounded-[3px] h-full">
                       <div className="font-mono text-[9px] tracking-widest text-[#00E5FF] uppercase border-b border-[#00FF41]/10 pb-1">
                         [ Background ]
                       </div>
-                      <p className="text-xs md:text-[12.5px] leading-relaxed text-[#00FF41]/85">
+                      <p className="text-xs md:text-[12.5px] leading-relaxed text-[#00FF41]/85 flex-1">
                         My foundation isn’t just academic—it’s built through constant experimentation with real tools like Linux, Docker, Node.js, and security tools such as Nmap and Wireshark. I’ve worked on projects ranging from full-stack web applications to security-focused systems, and participated in hackathons where I learned to build under pressure and think practically rather than theoretically.
                       </p>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-3 p-4 bg-[#050505]/30 border border-[#00FF41]/10 rounded-[3px] h-full">
                       <div className="font-mono text-[9px] tracking-widest text-[#00E5FF] uppercase border-b border-[#00FF41]/10 pb-1">
                         [ Evolution ]
                       </div>
-                      <p className="text-xs md:text-[12.5px] leading-relaxed text-[#00FF41]/85">
+                      <p className="text-xs md:text-[12.5px] leading-relaxed text-[#00FF41]/85 flex-1">
                         I didn’t start with deep expertise—I started with curiosity. Early on, I explored general web development, but over time, I gravitated toward cybersecurity and systems thinking, where logic, problem-solving, and real-world impact intersect. My growth has been hands-on: from building simple websites to developing API-driven applications and custom systems.
                       </p>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-3 p-4 bg-[#050505]/30 border border-[#00FF41]/10 rounded-[3px] h-full">
                       <div className="font-mono text-[9px] tracking-widest text-[#00E5FF] uppercase border-b border-[#00FF41]/10 pb-1">
                         [ Drive ]
                       </div>
-                      <p className="text-xs md:text-[12.5px] leading-relaxed text-[#00FF41]/85">
+                      <p className="text-xs md:text-[12.5px] leading-relaxed text-[#00FF41]/85 flex-1">
                         What pushes me is simple: I want to build things that actually matter and work in the real world. I’m not interested in surface-level knowledge. I aim to understand systems deeply, build with intent, and continuously move from "I know this" to "I can execute this" under real constraints.
                       </p>
                       <div className="inline-flex items-center gap-2 border border-red-500/25 bg-red-950/20 px-3 py-1.5 rounded-[2px] mt-2 w-max shadow-[0_0_10px_rgba(239,68,68,0.1)]">
@@ -826,13 +832,13 @@ export default function App() {
                       </button>
                     </div>
                     
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-h-[calc(100vh-420px)] overflow-y-auto pr-2 cyber-scrollbar">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch max-h-[calc(100vh-420px)] overflow-y-auto pr-2 cyber-scrollbar">
                       {skillCategories.map((cat, idx) => (
-                        <div key={idx} className="flex flex-col">
+                        <div key={idx} className="flex flex-col h-full p-4 bg-[#050505]/40 border border-[#00FF41]/15 rounded-[3px]">
                           <div className="font-mono text-[11px] tracking-wider text-[#00E5FF] border-b border-[#00FF41]/15 pb-1.5 mb-4 uppercase font-semibold">
                             {cat.title}
                           </div>
-                          <div className="space-y-3">
+                          <div className="space-y-3 flex-1">
                             {cat.skills.map((sk, sIdx) => (
                               <div key={sIdx} className="flex flex-col">
                                 <div className="flex justify-between items-center text-xs text-[#00FF41]/90 mb-1">

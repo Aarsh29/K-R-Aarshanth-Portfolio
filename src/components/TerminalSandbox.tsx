@@ -182,9 +182,9 @@ export default function TerminalSandbox() {
   }, [history]);
 
   return (
-    <div className="w-full h-44 bg-[#0A0A0A] border border-[#00FF41]/20 rounded p-3 font-mono text-[10px] md:text-xs flex flex-col shadow-inner overflow-hidden select-none">
+    <div className="w-full h-48 bg-[#0A0A0A] border border-[#00FF41]/20 rounded-[3px] p-4 font-mono text-[10px] md:text-xs flex flex-col shadow-inner overflow-hidden select-none">
       {/* Terminal Title Bar */}
-      <div className="flex items-center justify-between border-b border-[#00FF41]/15 pb-1.5 mb-2 text-[#00FF41]/60">
+      <div className="flex items-center justify-between border-b border-[#00FF41]/15 pb-2 mb-3 text-[#00FF41]/60">
         <span className="flex items-center gap-1.5">
           <span className="w-2 h-2 rounded-full bg-[#00FF41] blink" />
           SECURE_CLI_SANDBOX // KRA_SEC_PORT

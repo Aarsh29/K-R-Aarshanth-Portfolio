@@ -142,35 +142,59 @@ export default function CyberSidebar({ slideIndex }: CyberSidebarProps) {
 
   return (
     <div className="w-full lg:w-56 flex-shrink-0 border-t lg:border-t-0 lg:border-l border-dashed border-[#00FF41]/20 pt-6 lg:pt-0 lg:pl-6 flex flex-col gap-4 font-mono text-xs select-none">
-      <div className="text-[#00FF41] font-bold tracking-[2px] uppercase glow-text">
-        [ {config.header} ]
-      </div>
-      
-      <div className="flex flex-col gap-2">
-        {config.rows.map((row, idx) => (
-          <div key={idx} className="flex justify-between border-b border-[#00FF41]/5 pb-1">
-            <span className="text-[#00FF41]/50 uppercase">{row.label}:</span>
-            <span
-              className={
-                row.isGreen
-                  ? "text-[#00FF41] font-bold glow-text"
-                  : row.isCyan
-                  ? "text-[#00E5FF] font-bold glow-cyan"
-                  : row.isOrange
-                  ? "text-[#FF8A3D] font-bold"
-                  : "text-[#00FF41]/80"
-              }
-            >
-              {row.value}
-            </span>
-          </div>
-        ))}
+      <div className="bg-[#050505]/40 border border-[#00FF41]/15 rounded-[3px] p-4">
+        <div className="text-[#00FF41] font-bold tracking-[2px] uppercase glow-text">
+          [ {config.header} ]
+        </div>
+        <div className="flex flex-col gap-2 mt-3">
+          {config.rows.map((row, idx) => (
+            <div key={idx} className="flex justify-between border-b border-[#00FF41]/5 pb-1">
+              <span className="text-[#00FF41]/50 uppercase">{row.label}:</span>
+              <span
+                className={
+                  row.isGreen
+                    ? "text-[#00FF41] font-bold glow-text"
+                    : row.isCyan
+                    ? "text-[#00E5FF] font-bold glow-cyan"
+                    : row.isOrange
+                    ? "text-[#FF8A3D] font-bold"
+                    : "text-[#00FF41]/80"
+                }
+              >
+                {row.value}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="h-[1px] bg-[#00FF41]/15 my-1" />
+      <div className="bg-[#050505]/40 border border-[#00FF41]/15 p-4 rounded-[3px]">
+        <div className="text-[#00FF41] font-bold tracking-[2px] uppercase glow-text">
+          [ {config.header} ]
+        </div>
+        <div className="flex flex-col gap-2 mt-3">
+          {config.rows.map((row, idx) => (
+            <div key={idx} className="flex justify-between border-b border-[#00FF41]/5 pb-1">
+              <span className="text-[#00FF41]/50 uppercase">{row.label}:</span>
+              <span
+                className={
+                  row.isGreen
+                    ? "text-[#00FF41] font-bold glow-text"
+                    : row.isCyan
+                    ? "text-[#00E5FF] font-bold glow-cyan"
+                    : row.isOrange
+                    ? "text-[#FF8A3D] font-bold"
+                    : "text-[#00FF41]/80"
+                }
+              >
+                {row.value}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
 
-      {/* Mock Terminal Stream */}
-      <div className="bg-[#050505] border border-[#00FF41]/15 p-3 text-[9px] text-[#00FF41] leading-relaxed rounded h-24 overflow-hidden flex flex-col gap-1 shadow-inner">
+      <div className="bg-[#050505]/40 border border-[#00FF41]/15 p-4 rounded-[3px] h-24 overflow-hidden flex flex-col gap-1 shadow-inner">
         {activeLogs.slice(-4).map((log, index) => (
           <div key={index} className="truncate">
             {log}
