@@ -141,7 +141,7 @@ export default function CyberSidebar({ slideIndex }: CyberSidebarProps) {
   if (!config) return null;
 
   return (
-    <div className="w-full lg:w-56 flex-shrink-0 border-t lg:border-t-0 lg:border-l border-dashed border-[#00FF41]/20 pt-6 lg:pt-0 lg:pl-6 flex flex-col gap-4 font-mono text-xs select-none">
+    <div className="w-full lg:w-72 flex-shrink-0 border-t lg:border-t-0 lg:border-l border-dashed border-[#00FF41]/20 pt-6 lg:pt-0 lg:pl-6 flex flex-col gap-4 font-mono text-xs select-none">
       <div className="bg-[#050505]/40 border border-[#00FF41]/15 rounded-[3px] p-4">
         <div className="text-[#00FF41] font-bold tracking-[2px] uppercase glow-text">
           [ {config.header} ]
@@ -194,9 +194,9 @@ export default function CyberSidebar({ slideIndex }: CyberSidebarProps) {
         </div>
       </div>
 
-      <div className="bg-[#050505]/40 border border-[#00FF41]/15 p-4 rounded-[3px] h-24 overflow-hidden flex flex-col gap-1 shadow-inner">
+      <div className="bg-[#050505]/40 border border-[#00FF41]/15 p-4 rounded-[3px] h-40 overflow-y-auto flex flex-col gap-1 shadow-inner">
         {activeLogs.slice(-4).map((log, index) => (
-          <div key={index} className="truncate">
+          <div key={index} className="break-words">
             {log}
           </div>
         ))}
